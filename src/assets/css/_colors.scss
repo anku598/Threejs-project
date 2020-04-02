@@ -1,0 +1,23 @@
+// base colors
+$color-white: #ffffff;
+$color-black: #000000;
+$color-gray: #686867;
+
+$color-light: #F5F5F5;
+$color-dark-blue: #0E1224;
+
+$color-primary: #FF5829;
+$color-accent: $color-white;
+$color-secondary: $color-dark-blue;
+
+// colors by function
+$color-title: $color-black;
+$color-text: $color-black;
+$color-bg: $color-white;
+
+$color-link: $color-text;
+$color-link-hover: $color-primary;
+
+$color-border: $color-dark-blue;
+$color-text-selection: $color-white;
+$color-bg-selection: $color-black;

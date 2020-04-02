@@ -1,0 +1,60 @@
+// Media Query Mixins
+@mixin mediaXs {
+  @media screen and (max-width: 575.98px) {
+    @content;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@mixin mediaSm {
+  @media (max-width: 767.98px) {
+    @content;
+  }
+}
+
+@mixin mediaMd {
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    @content;
+  }
+}
+
+@mixin mediaLg {
+  @media (min-width: 992px) and (max-width: 1170.98px) {
+    @content;
+  }
+}
+
+@mixin mediaXl {
+  @media screen and (min-width: 1171px) {
+    @content;
+  }
+}
+
+// Water Mark Mixin
+
+@mixin watermark {
+  position: absolute;
+  top: 20%;
+  text-indent: -1%;
+  transform: translateY(-50%);
+  text-transform: uppercase;
+  overflow: hidden;
+  content: '';
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: calc(14vw - 16px);
+  text-align: center;
+  margin-left: 5%;
+  // width: 100%;
+  z-index: 2;
+  color: rgba(212, 212, 212, 0.18);
+
+  @include mediaSm {
+    display: none;
+  }
+}
+
+
+// Variables 
+
+$section-margin: 80px;
